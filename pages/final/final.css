@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url(../../image/iPhone\ 16\ -\ 1.png); /* Caminho para sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra toda a área, mantendo a proporção */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; 
+}
+
+.home{
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center;
+    height: 100vh; /* Ocupa a altura total da janela */
+    margin-top: -10px;
+}
+
+.Entrar{
+    display: flex; /* Flexbox para facilitar a centralização */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-top: -200px;
+    gap: 10px;
+}
+
+.Entrar img{
+    width: 70px;
+}
+
+.home img{
+    width: 180px;
+}
+
+strong{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+

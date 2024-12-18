@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+}
+:root{
+    --white:#fff;
+    --red: #E74C3C;
+    --red-black: #EB001B;
+    --brown-black:#3E3017;
+    --brown-white:#A47E3C;
+    --green:#00FF00;
+}
+
+body{
+    height: 100vh;
+    background-image: url(../../image/fundo.png); /* Caminho para sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra toda a área, mantendo a proporção */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; 
+}
+
+.conteudo{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 31px;
+    margin-left: 160px;
+}
+
+.conteudo i{
+    color: var(--red);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+button{
+    padding: 1.5px; /* Tamanho do botão */
+    width: 50px;
+    font-size: 10px; /* Tamanho do texto */
+    color: var(--white); /* Cor do texto */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Indica que é clicável */
+    background: linear-gradient(to bottom, #A47E3C, #3E3017); /* Degradê */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animação suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.img-home{
+    display: flex; /* Flexbox para facilitar a centralização */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-top: 40px;
+}
+
+.img-home img{
+    width: 220px;
+}
+
+.menu-desktop{
+    margin-top: 7px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    margin-right: 5px;
+}
+
+
+main nav.menu-desktop ul li{
+    display: inline-block;
+    font-size: 9px;
+}
+
+main nav.menu-desktop ul li strong{
+    background-color: var(--red-black);
+    margin-left: 4px;
+}
+
+/* linha */
+
+.linha {
+    width: 215px; /* Largura total */
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 1px; /* Altura da linha */
+    background-color: var(--white); /* Cor da linha */
+}
+
+.linha-2 {
+    width: 215px; /* Largura total */
+    margin-top: 15px;
+    margin-left: 20px;
+    height: 1px; /* Altura da linha */
+    background-color: var(--white); /* Cor da linha */
+    position: relative;
+}
+
+/* linha */
+
+h2{
+    color: var(--white);
+    font-weight: 100;
+    font-style: normal;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.desktop{
+    margin-top: 10px;
+    margin-left: 13px;
+
+}
+.desktop .up{
+    width: 20px;
+    margin-left: 12px;
+}
+
+.desktop img{
+    width: 30px;
+    margin-left: 12px;
+}
+
+.img img{
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 12px;
+    margin-top: 20px;
+    box-shadow: rgba(193, 188, 188, 0.35) 0px 5px 15px;
+}
+
+.img{
+    margin-bottom: 20px;
+}
+
+.le h1{
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 100;
+    font-style: normal;
+    margin-left: 75px;
+    margin-top: -50px;
+}
+
+.le p{
+    color: var(--green);
+    font-size: 10px;
+    font-weight: 100;
+    font-style: normal;
+    margin-left: 75px;
+    margin-top: 8px;
+    display: inline;
+}
+
+.le button{
+    padding: 1.5px; /* Tamanho do botão */
+    width: 50px;
+    font-size: 10px; /* Tamanho do texto */
+    color: var(--white); /* Cor do texto */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Indica que é clicável */
+    background: linear-gradient(to bottom, #A47E3C, #3E3017); /* Degradê */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animação suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-left: 60px;
+}

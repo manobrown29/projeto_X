@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url(../../image/Frame\ 9.png); /* Caminho para sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra toda a área, mantendo a proporção */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; 
+}

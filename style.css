@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url(image/iPhone\ 16\ -\ 1.png); /* Caminho para sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra toda a área, mantendo a proporção */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; 
+}
+
+.home{
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center;
+    height: 100vh; /* Ocupa a altura total da janela */
+    margin-top: -10px;
+}
+
+.Entrar{
+    display: flex; /* Flexbox para facilitar a centralização */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-top: -200px;
+    gap: 10px;
+}
+
+.home img{
+    width: 180px;
+}
+
+strong{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button{
+    padding: 1px; /* Tamanho do botão */
+    width: 180px;
+    font-size: 16px; /* Tamanho do texto */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Indica que é clicável */
+    background: linear-gradient(to bottom, #A47E3C, #3E3017); /* Degradê */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animação suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
