@@ -19,7 +19,9 @@ body{
     background-size: cover; /* Faz com que a imagem cubra toda a área, mantendo a proporção */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
     background-position: center; 
+    margin-top: 20px;
 }
+
 
 .conteudo{
     display: inline-block;
