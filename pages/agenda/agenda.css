@@ -7,6 +7,7 @@
 
 body {
     height: 100vh;
+    background-image: url(../../image/iPhone\ 16\ -\ 1.png);
     background-color: black;
     /* Caminho para sua imagem */
     background-size: cover;
@@ -31,57 +32,15 @@ body {
     margin-top: 10px;
 }
 
-.calendar-header {
-    margin-top: 20px;
+.date{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-    color: var(--white);
+    text-align: center;
 }
 
-.arrow {
-    font-size: 24px;
-    cursor: pointer;
-    user-select: none;
-    color: var(--white);
-}
 
-.arrow:hover {
-    color: #ccc;
-}
 
-.month-year {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.days {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.day {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ccc;
-    color: black;
-    padding: 10px;
-    width: 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.day span {
-    font-size: 8px;
-}
-
-.day strong {
-    font-size: 10px;
-    margin-top: 5px;
-}
 
 .linha{
     width: 300px; /* Largura total */
@@ -132,4 +91,18 @@ button{
     background: linear-gradient(to bottom, #A47E3C, #3E3017); /* Degradê */
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animação suave */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.topo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.topo h1{
+    color: var(--white);
+    font-weight: 100;
+    font-size: 18px;
 }

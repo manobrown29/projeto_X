@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="agenda.css">
-    <script src="agenda.js"></script>
+    <script src="agenda.js" defer></script>
     <title>art.tatto</title>
 </head>
 <body>
@@ -18,41 +18,12 @@
     </header>
 
     <div class="calendar">
-        <div class="calendar-header">
-          
-          <div class="month-year">DEZEMBRO 2024</div>
-          
+        <div class="topo">
+          <h1>Selecione a data:</h1>
         </div>
-
-        <div class="days">
-        <div class="arrow">&lt;</div>
-          <div class="day">
-            <span>SEG</span>
-            <strong>20</strong>
-          </div>
-          <div class="day">
-            <span>TER</span>
-            <strong>21</strong>
-          </div>
-          <div class="day">
-            <span>QUA</span>
-            <strong>22</strong>
-          </div>
-          <div class="day">
-            <span>QUI</span>
-            <strong>23</strong>
-          </div>
-          <div class="day">
-            <span>SEX</span>
-            <strong>24</strong>
-          </div>
-          <div class="day">
-            <span>SAB</span>
-            <strong>25</strong>
-          </div>
-          <div class="arrow">&gt;</div>
+        <div class="date">
+          <input type="date" id="dataSelecionada">
         </div>
-      </div>
 
       <div class="linha"></div>
 
@@ -60,15 +31,13 @@
         <div class="flex">
             <div class="txt">
                 <h1>Pedido</h1>
-
-                <p>Tatuagem:</p>
-                <p>Valor:</p>
-                <p>Dia:</p>
+                <p id="valorExibido"></p>
+                <p id="resultado">data:</p>
             </div>
         </div>
         <div class="pqp">
-            <button class="button" onclick="trocarPagina()">finalizar agendamento</button>
+            <button id="obterData"onclick="trocarPagina()">finalizar agendamento</button>
         </div>
-      </div>
+    </div>
 </body>
 </html>
