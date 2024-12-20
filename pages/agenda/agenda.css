@@ -1,14 +1,135 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Libre Baskerville", serif;
 }
 
-body{
+body {
     height: 100vh;
-    background-image: url(../../image/Frame\ 9.png); /* Caminho para sua imagem */
-    background-size: cover; /* Faz com que a imagem cubra toda a área, mantendo a proporção */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
-    background-position: center; 
+    background-color: black;
+    /* Caminho para sua imagem */
+    background-size: cover;
+    /* Faz com que a imagem cubra toda a área, mantendo a proporção */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+    background-position: center;
+}
+
+:root{
+    --white:#fff;
+    --red: #E74C3C;
+    --red-black: #EB001B;
+    --brown-black:#3E3017;
+    --brown-white:#A47E3C;
+    --green:#00FF00;
+}
+
+.home img {
+    width: 120px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.calendar-header {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.arrow {
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    color: var(--white);
+}
+
+.arrow:hover {
+    color: #ccc;
+}
+
+.month-year {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.days {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+    color: black;
+    padding: 10px;
+    width: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.day span {
+    font-size: 8px;
+}
+
+.day strong {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.linha{
+    width: 300px; /* Largura total */
+    margin-top: 30px;
+    margin-left: 25px;
+    height: 1px; /* Altura da linha */
+    background-color: var(--white); /* Cor da linha */
+}
+
+.txt{
+    display: block;
+}
+
+.txt h1{
+    color: var(--white);
+    font-weight: 100;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.txt p{
+    color: var(--white);
+    font-weight: 100;
+    font-size: 12px;
+    margin-left: 25px;
+    margin-top: 12px;
+}
+
+.pqp{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+button{
+    margin-top: 30px;
+    padding: 1px; /* Tamanho do botão */
+    width: 220px;
+    font-size: 16px; /* Tamanho do texto */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Indica que é clicável */
+    background: linear-gradient(to bottom, #A47E3C, #3E3017); /* Degradê */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animação suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
 }

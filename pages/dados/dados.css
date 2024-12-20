@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url(../../image/iPhone\ 16\ -\ 1.png);
+    /* Caminho para sua imagem */
+    background-size: cover;
+    /* Faz com que a imagem cubra toda a área, mantendo a proporção */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+    background-position: center;
+}
+
+:root {
+    --white: #fff;
+    --red: #E74C3C;
+    --red-black: #EB001B;
+    --brown-black: #3E3017;
+    --brown-white: #A47E3C;
+    --green: #00FF00;
+}
+
+
+.img img {
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.txt h1 {
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 200px;
+    /* Largura máxima do formulário */
+    margin: auto;
+    /* Centralizar na página */
+}
+
+label {
+    display: block;
+    /* Garante que o rótulo fique acima do campo */
+    margin-bottom: 5px;
+    /* Espaço entre o rótulo e o campo */
+    font-weight: 100;
+    font-size: 10px;
+    color: var(--white);
+}
+
+input {
+    width: 100%;
+    /* Campos ocupam toda a largura disponível */
+    padding: 5px;
+    /* Espaço interno no campo */
+    margin-bottom: 20px;
+    /* Espaço entre os campos */
+    border: 1px solid var(--brown-white);
+    /* Borda cinza clara */
+    box-sizing: border-box;
+    /* Inclui o padding na largura total */
+    background-color: var(--brown-white);
+}
+
+button {
+    padding: 1.5px;
+    /* Tamanho do botão */
+    width: 50px;
+    font-size: 10px;
+    /* Tamanho do texto */
+    color: var(--white);
+    /* Cor do texto */
+    border: none;
+    /* Remove a borda */
+    cursor: pointer;
+    /* Indica que é clicável */
+    background: linear-gradient(to bottom, #A47E3C, #3E3017);
+    /* Degradê */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* Animação suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+}
+
+button:hover {
+    background-color: var(--brown-black);
+    /* Cor do botão ao passar o mouse */
+}
+
+input[type="email"]::placeholder {
+    color: var(--white);
+}
+
+input[type="text"]::placeholder {
+    color: var(--white);
+}
+
+.local h2{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.local p{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+button {
+    margin-top: 30px;
+    margin-left: 80px;
+    padding: 1px; /* Tamanho do botão */
+    width: 180px;
+    font-size: 16px; /* Tamanho do texto */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Indica que é clicável */
+    background: linear-gradient(to bottom, #A47E3C, #3E3017); /* Degradê */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animação suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+button:hover {
+    background-color: var(--brown-black);
+    /* Cor do botão ao passar o mouse */
+}
