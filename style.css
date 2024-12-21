@@ -19,7 +19,6 @@ body{
     align-items: center; /* Centraliza verticalmente */
     text-align: center;
     height: 100vh; /* Ocupa a altura total da janela */
-    margin-top: -10px;
 }
 
 .Entrar{
@@ -42,7 +41,7 @@ strong{
     font-style: normal;
 }
 
-button{
+.Entrar button{
     padding: 1px; /* Tamanho do botão */
     width: 180px;
     font-size: 16px; /* Tamanho do texto */
@@ -54,3 +53,28 @@ button{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
+.btn-social{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.btn-social button{
+    border: none;
+    background: linear-gradient(to bottom, #A47E3C, #3E3017); /* Degradê */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animação suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    color: white;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-social a{
+    color: #fff;
+}
