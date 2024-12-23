@@ -34,7 +34,7 @@ window.onload = function () {
 
 // Define a data mínima dinamicamente
 const today = new Date().toISOString().split("T")[0];
-const dateInput = document.getElementById("dataSelecionada");
+const dateInput = document.getElementById("date");
 
 // Configura o valor mínimo
 dateInput.min = today;
