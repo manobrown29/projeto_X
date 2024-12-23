@@ -91,6 +91,11 @@ body {
     margin-top: 12px;
 }
 
+.horario p{
+    display: inline;
+}
+
+
 input[type="checkbox"] {
     width: 12px;
     height: 12px;

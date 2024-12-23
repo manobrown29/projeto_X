@@ -47,3 +47,17 @@ dateInput.addEventListener("change", function () {
     }
 });
 
+ // Seleciona todos os checkboxes
+ const checkboxes = document.querySelectorAll('.exclusive-checkbox');
+
+ checkboxes.forEach(checkbox => {
+   checkbox.addEventListener('change', () => {
+     // Desmarca todos os outros checkboxes
+     if (checkbox.checked) {
+       checkboxes.forEach(cb => {
+         if (cb !== checkbox) cb.checked = false;
+       });
+     }
+   });
+ });
+
