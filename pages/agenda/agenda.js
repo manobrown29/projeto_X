@@ -32,19 +32,18 @@ window.onload = function () {
   }
 };
 
-// Define a data mínima dinamicamente
+// Obtém a data de hoje no formato YYYY-MM-DD
 const today = new Date().toISOString().split("T")[0];
 const dateInput = document.getElementById("date");
 
-// Configura o valor mínimo
+// Configura o valor mínimo no input
 dateInput.min = today;
 
-// Adiciona validação no envio do formulário
-document.getElementById("date-form").addEventListener("submit", function (event) {
+// Valida a data selecionada
+dateInput.addEventListener("change", function () {
     if (dateInput.value < today) {
-        alert("Por favor, escolha uma data válida (não no passado).");
-        event.preventDefault(); // Impede o envio do formulário
+        alert("Não há datas disponíveis no passado. Por favor, escolha uma data futura.");
+        dateInput.value = ""; // Reseta o valor do campo
     }
 });
-
 
